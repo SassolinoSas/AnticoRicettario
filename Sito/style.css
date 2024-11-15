@@ -1,0 +1,171 @@
+/* Palette di colori lilla/azzurro */
+:root {
+    --azzurro-chiaro: #a8d0e6;
+    --lilla-chiaro: #cdb4db;
+    --lilla-scuro: #9a6fb0;
+    --testo-scuro: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--azzurro-chiaro);
+    color: var(--testo-scuro);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--lilla-scuro);
+    color: white;
+}
+header .logo {
+    display: flex;
+    align-items: center; /* Allinea il logo e il titolo verticalmente al centro */
+}
+header .logo img {
+    width: 90px; /* Imposta la larghezza desiderata */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    margin-right: 10px;
+    border-radius: 100%;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.introduzione {
+    padding: 20px;
+    background-color: var(--lilla-chiaro);
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.introduzione h2 {
+    margin-bottom: 10px;
+    color: var(--lilla-scuro);
+}
+.preferite {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.preferite h2 {
+    font-size: 24px;
+    color: var(--lilla-scuro); /* Usa il colore lilla scuro della palette */
+}
+
+main {
+    padding: 20px;
+}
+
+.ricette-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonne, ognuna occupa 1 frazione uguale */
+    gap: 20px; /* Spaziatura tra gli articoli */
+    padding: 20px;
+}
+
+.ricette-gallery article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--lilla-chiaro); /* Colore di sfondo del riquadro */
+    border-radius: 15px; /* Bordi stondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra */
+    width: 380px; /* Larghezza del rettangolo */
+    text-align: center;
+    margin: 10px;
+}
+
+.ricette-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.ricette-gallery p {
+    font-size: 14px;
+    color: var(--testo-scuro);
+    margin-top: 5px;
+}
+
+
+footer {
+    background-color: var(--lilla-scuro);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .info-contatti p {
+    margin: 5px 0;
+}
+
+.ricetta-dettaglio {
+    max-width: 600px; /* Larghezza massima per limitare la larghezza del contenuto */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--lilla-chiaro); /* Sfondo chiaro per il contenuto */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leggera ombra */
+}
+
+.ricetta-dettaglio h2 {
+    text-align: center;
+    font-size: 28px;
+    color: var(--testo-scuro);
+}
+
+.ricetta-dettaglio img {
+    display: block; /* Necessario per usare margin:auto */
+    margin: 0 auto 20px auto; /* Imposta margini automatici a destra e sinistra per centrare */
+    width: 80%; /* Immagine in larghezza massima */
+    max-width: 350px; /* Limita la larghezza massima */
+    height: auto; /* Mantiene proporzioni corrette */
+    border-radius: 10px; /* Bordi stondati */
+}
+
+
+.ingredienti, .preparazione , .buonappetito, .tips{
+    margin-top: 20px;
+}
+
+.ingredienti ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.preparazione p {
+    line-height: 1.6;
+}
+
