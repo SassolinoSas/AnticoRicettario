@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
     background-color: var(--azzurro-chiaro);
     color: var(--testo-scuro);
-    padding: 0 10px;
+    padding: 0 2%;
 }
 
 /* HEADER */
@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 1rem 2%;
     background-color: var(--lilla-scuro);
     color: white;
     flex-wrap: wrap;
@@ -37,14 +37,15 @@ header .logo {
 }
 
 header .logo img {
-    width: 80px;
+    width: 10vw;
+    max-width: 80px;
     height: auto;
-    margin-right: 10px;
-    border-radius: 100%;
+    margin-right: 1rem;
+    border-radius: 50%;
 }
 
 header .logo h1 {
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 
 nav ul {
@@ -52,43 +53,44 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 1rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 /* INTRODUZIONE */
 .introduzione {
-    padding: 15px;
+    padding: 1rem;
     background-color: var(--lilla-chiaro);
-    margin: 20px auto;
+    margin: 2% auto;
     border-radius: 10px;
     text-align: center;
-    max-width: 800px;
+    max-width: 90%;
 }
 
 .introduzione h2 {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
     color: var(--lilla-scuro);
 }
 
 /* SEZIONE RICETTE */
 .ricette-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adattabile */
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* Più adattabile */
+    gap: 2%;
+    padding: 2%;
 }
 
 .ricette-gallery article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 1rem;
     background-color: var(--lilla-chiaro);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -96,18 +98,18 @@ nav ul li a {
 }
 
 .ricette-gallery img {
-    width: 100%;
+    width: 80%;
     max-width: 200px;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 /* DETTAGLIO RICETTA */
 .ricetta-dettaglio {
-    max-width: 90%;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 95%;
+    margin: 2% auto;
+    padding: 2%;
     background-color: var(--lilla-chiaro);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -115,13 +117,13 @@ nav ul li a {
 
 .ricetta-dettaglio h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--testo-scuro);
 }
 
 .ricetta-dettaglio img {
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 1rem;
     width: 80%;
     max-width: 350px;
     height: auto;
@@ -130,12 +132,12 @@ nav ul li a {
 
 /* LISTE E TESTO */
 .ingredienti, .preparazione, .buonappetito, .tips {
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 .ingredienti ul {
     list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 1rem;
 }
 
 /* FOOTER */
@@ -143,11 +145,12 @@ footer {
     background-color: var(--lilla-scuro);
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 1rem 0;
+    font-size: 1rem;
 }
 
 footer .info-contatti p {
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 
 /* MEDIA QUERIES PER RESPONSIVITÀ */
@@ -159,15 +162,16 @@ footer .info-contatti p {
     }
 
     header .logo img {
-        width: 70px;
+        width: 8vw;
+        max-width: 70px;
     }
 
     header .logo h1 {
-        font-size: 20px;
+        font-size: 1.3rem;
     }
 
     .ricetta-dettaglio {
-        padding: 15px;
+        padding: 1rem;
     }
 }
 
@@ -175,7 +179,11 @@ footer .info-contatti p {
     nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 0.5rem;
+    }
+
+    .ricette-gallery {
+        grid-template-columns: 1fr;
     }
 
     .ricette-gallery img {
@@ -187,7 +195,7 @@ footer .info-contatti p {
     }
 
     footer {
-        font-size: 14px;
-        padding: 15px 10px;
+        font-size: 0.9rem;
+        padding: 1rem;
     }
 }
