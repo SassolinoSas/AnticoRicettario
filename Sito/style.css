@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
     background-color: var(--azzurro-chiaro);
     color: var(--testo-scuro);
-    padding: 0 2%;
+    padding: 0 5%;
 }
 
 /* HEADER */
@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2%;
+    padding: 1em;
     background-color: var(--lilla-scuro);
     color: white;
     flex-wrap: wrap;
@@ -37,15 +37,15 @@ header .logo {
 }
 
 header .logo img {
-    width: 10vw;
+    width: 15%;
     max-width: 80px;
     height: auto;
-    margin-right: 1rem;
-    border-radius: 50%;
+    margin-right: 10px;
+    border-radius: 100%;
 }
 
 header .logo h1 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 nav ul {
@@ -53,19 +53,18 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1.1rem;
 }
 
 /* INTRODUZIONE */
 .introduzione {
-    padding: 1rem;
+    padding: 1em;
     background-color: var(--lilla-chiaro);
     margin: 2% auto;
     border-radius: 10px;
@@ -74,14 +73,14 @@ nav ul li a {
 }
 
 .introduzione h2 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
     color: var(--lilla-scuro);
 }
 
 /* SEZIONE RICETTE */
 .ricette-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* Più adattabile */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2%;
     padding: 2%;
 }
@@ -90,7 +89,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 1em;
     background-color: var(--lilla-chiaro);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -102,12 +101,12 @@ nav ul li a {
     max-width: 200px;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
 }
 
 /* DETTAGLIO RICETTA */
 .ricetta-dettaglio {
-    max-width: 95%;
+    max-width: 90%;
     margin: 2% auto;
     padding: 2%;
     background-color: var(--lilla-chiaro);
@@ -117,14 +116,14 @@ nav ul li a {
 
 .ricetta-dettaglio h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: var(--testo-scuro);
 }
 
 .ricetta-dettaglio img {
     display: block;
-    margin: 0 auto 1rem;
-    width: 80%;
+    margin: 0 auto 1em;
+    width: 100%;
     max-width: 350px;
     height: auto;
     border-radius: 10px;
@@ -132,12 +131,12 @@ nav ul li a {
 
 /* LISTE E TESTO */
 .ingredienti, .preparazione, .buonappetito, .tips {
-    margin-top: 1rem;
+    margin-top: 1.5em;
 }
 
 .ingredienti ul {
     list-style-type: disc;
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 /* FOOTER */
@@ -145,12 +144,11 @@ footer {
     background-color: var(--lilla-scuro);
     color: white;
     text-align: center;
-    padding: 1rem 0;
-    font-size: 1rem;
+    padding: 1em 0;
 }
 
 footer .info-contatti p {
-    margin: 0.5rem 0;
+    margin: 0.5em 0;
 }
 
 /* MEDIA QUERIES PER RESPONSIVITÀ */
@@ -162,16 +160,16 @@ footer .info-contatti p {
     }
 
     header .logo img {
-        width: 8vw;
+        width: 20%;
         max-width: 70px;
     }
 
     header .logo h1 {
-        font-size: 1.3rem;
+        font-size: 1.3em;
     }
 
     .ricetta-dettaglio {
-        padding: 1rem;
+        padding: 5%;
     }
 }
 
@@ -179,11 +177,7 @@ footer .info-contatti p {
     nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 0.5rem;
-    }
-
-    .ricette-gallery {
-        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     .ricette-gallery img {
@@ -195,7 +189,7 @@ footer .info-contatti p {
     }
 
     footer {
-        font-size: 0.9rem;
-        padding: 1rem;
+        font-size: 0.9em;
+        padding: 1.5em;
     }
 }
